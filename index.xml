@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Your site title</title>
+    <link>https://kalio0512.github.io/index.xml</link>
+    <description>Recent content on Your site title</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <managingEditor>kalio0512@sina.com (Your Name)</managingEditor>
+    <webMaster>kalio0512@sina.com (Your Name)</webMaster>
+    <lastBuildDate>Tue, 20 Dec 2016 16:11:31 +0800</lastBuildDate>
+    <atom:link href="https://kalio0512.github.io/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Android使用SMB协议访问局域网内共享文件夹</title>
+      <link>https://kalio0512.github.io/2016/12/smb-agreement/</link>
+      <pubDate>Tue, 20 Dec 2016 16:11:31 +0800</pubDate>
+      <author>kalio0512@sina.com (Your Name)</author>
+      <guid>https://kalio0512.github.io/2016/12/smb-agreement/</guid>
+      <description>&lt;p&gt;&lt;/p&gt;
+
+&lt;p&gt;1、&lt;code&gt;Android&lt;/code&gt;不支持直接访问局域网的共享文件，所以要用到其它的开源库，来实现文件的访问。&lt;a href=&#34;http://jcifs.samba.org/&#34;&gt;JCIFS&lt;/a&gt;实现smb协议；&lt;a href=&#34;https://clinkc.svn.sourceforge.net/svnroot/cgupnpjava/trunk/&#34;&gt;HTTP服务器&lt;/a&gt;或者用&lt;a href=&#34;http://commons.apache.org/proper/commons-net/&#34;&gt;Apache&lt;/a&gt;来实现http服务器。&lt;/p&gt;
+
+&lt;p&gt;2、增加权限&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;    &amp;lt;uses-permission android:name=&amp;quot;android.permission.INTERNET&amp;quot;/&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;3、导入&lt;code&gt;jcifs-1.3.18.jar&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;4、创建对象&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;    SmbFile smbFile = new SmbFile(&amp;quot;smb://user:pwd@host_ip&amp;quot;);
+&lt;/code&gt;&lt;/pre&gt;</description>
+    </item>
+    
+    <item>
+      <title>n preview</title>
+      <link>https://kalio0512.github.io/2016/12/n-preview/</link>
+      <pubDate>Tue, 20 Dec 2016 15:08:05 +0800</pubDate>
+      <author>kalio0512@sina.com (Your Name)</author>
+      <guid>https://kalio0512.github.io/2016/12/n-preview/</guid>
+      <description>&lt;p&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;build-gradle-文件-作如下更新&#34;&gt;&lt;code&gt;build.gradle&lt;/code&gt;文件，作如下更新：&lt;/h2&gt;
+
+&lt;pre&gt;&lt;code&gt;    android{
+        compileSdkVersion &#39;android-N&#39;
+        buildToolsVersion &#39;23&#39;
+        ...
+
+        defaultConfig {
+            minSdkVersion &#39;N&#39;
+            targetSdkVersion &#39;N&#39;
+            ...
+        }
+        ...
+    }
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;多窗口生命周期&#34;&gt;多窗口生命周期&lt;/h2&gt;</description>
+    </item>
+    
+    <item>
+      <title>adb常用命令</title>
+      <link>https://kalio0512.github.io/2016/12/adb-cmd/</link>
+      <pubDate>Fri, 16 Dec 2016 10:27:25 +0800</pubDate>
+      <author>kalio0512@sina.com (Your Name)</author>
+      <guid>https://kalio0512.github.io/2016/12/adb-cmd/</guid>
+      <description>&lt;p&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;adb命令查看屏幕分辨率&#34;&gt;adb命令查看屏幕分辨率&lt;/h2&gt;
+
+&lt;pre&gt;&lt;code&gt;    adb shell wm size
+&lt;/code&gt;&lt;/pre&gt;</description>
+    </item>
+    
+    <item>
+      <title>GIT使用</title>
+      <link>https://kalio0512.github.io/2016/12/git-study/</link>
+      <pubDate>Thu, 15 Dec 2016 20:08:31 +0800</pubDate>
+      <author>kalio0512@sina.com (Your Name)</author>
+      <guid>https://kalio0512.github.io/2016/12/git-study/</guid>
+      <description>&lt;p&gt;全局的通过&lt;code&gt;vim ~/.gitconfig&lt;/code&gt;来查看&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;    git config --global user.name &amp;quot;Your Name&amp;quot;
+    git config --global user.email &amp;quot;you@example.com&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;局部的通过当前路径下的&lt;code&gt;.git/config&lt;/code&gt;来查看&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;    git config user.name &amp;quot;Your Name&amp;quot;
+    git config user.email &amp;quot;you@example.com&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;也可以修改提交的用户名和Email&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;    git commit --amend --author=&#39;Your Name&#39;
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
